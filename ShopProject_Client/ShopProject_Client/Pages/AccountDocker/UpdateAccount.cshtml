@@ -1,0 +1,263 @@
+﻿@page
+@model UpdateAccountModel
+@{
+    Layout = null;
+}
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phone Love</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="N-Air Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <meta charset utf="8">
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+
+    <!--fonts-->
+    <!--bootstrap-->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--coustom css-->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <!--shop-kart-js-->
+    <script src="~/js/simpleCart.min.js"></script>
+    <!--default-js-->
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <!--bootstrap-js-->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!--script-->
+    <!-- FlexSlider -->
+    <script src="~/js/imagezoom.js"></script>
+    <script defer src="~/js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
+    <script src="assets\libs\sweetalert2\sweetalert2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets\js\pages\sweet-alerts.init.js"></script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
+    <!-- //FlexSlider-->
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            var token = sessionStorage.getItem('auToken');
+            if (token == null) {
+                window.location.href = "/Error/Error401";
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Lấy giá trị token từ sessionStorage
+            var token = sessionStorage.getItem('auToken');
+
+            // Kiểm tra xem token có tồn tại hay không
+            if (token != null) {
+                // Nếu có token, hiển thị phần tử có class 'pro-user-name' và ẩn phần tử có class 'no-token'
+                $('#have_token').show();
+                $('#no_token').hide();
+            } else {
+                // Nếu không có token, ẩn phần tử có class 'pro-user-name' và hiển thị phần tử có class 'no-token'
+                $('#have_token').hide();
+                $('#no_token').show();
+            }
+        });
+
+    </script>
+    <script>
+        function clearSessionStorage() {
+            sessionStorage.clear();
+          
+        }
+    </script>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo2">
+                    <a href="/Home/Home"><img class="img-logo" src="~/images/logo.png" alt="/" /></a>
+                    <a>Update Account</a>
+                </div>
+                <div class="login-bars">
+                    <div class="dropdown" id="have_token">
+                        <a href="#" id="user_name">UserName</a>
+                        <div class="dropdown-content">
+                            <h5 class="m-0 text-white">
+                                Welcome !
+                            </h5>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Admin/Dashboard" id="adminbutton">Management</a>
+                            <a href="/AccountDocker/UpdateAccount">My account</a>
+                            <a href="/AccountDocker/ChangePassword">Change password</a>
+                            <a href="/OrderDocker/OrderHistory">Order history</a>
+                            <a id="clearSessionStorageLink;javascript:void(0);" href="/AccountDocker/Login" onclick="clearSessionStorage()">Logout</a>
+                        </div>
+                        <script>
+                            function decodeToken(token) {
+                                const base64Url = token.split('.')[1];
+                                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                                return JSON.parse(atob(base64));
+                            }
+                            $(document).ready(function () {
+                                // Lấy giá trị token từ sessionStorage
+                                var token = sessionStorage.getItem('auToken');
+                                if (token != null) {
+                                    const decodedPayload = decodeToken(token);
+                                    var tokendecode = decodedPayload;
+                                    if (tokendecode.admin == "True") {
+                                        $('#adminbutton').show();
+                                    }
+                                    else {
+                                        $('#adminbutton').hide();
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                    <div id="no_token">
+                        <a class="btn btn-default log-bar" href="/AccountDocker/Register" role="button">Sign up</a>
+                        <a class="btn btn-default log-bar" href="/AccountDocker/Login" role="button">Sign In</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+    </div>
+  
+    <div class="reg-form1" style="margin-bottom: 17rem;display: flex;justify-content: center;">
+        <div class="containers3" style=" background: white;width: 36% !important;margin-left: 0rem !important;padding-bottom: 1rem;border-radius: 2rem;">
+            <div class="reg">
+                <form class="form-body" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <ul>
+                        <li><label asp-for="FullName">Full Name: </label></li>
+                        <li><input asp-for="FullName" class="form-control" id="fullname" value="" /></li>
+                        <li><span asp-validation-for="FullName" class="text-danger"></span></li>
+                    </ul>
+                    <ul>
+                        <li><label asp-for="Address">Address: </label></li>
+                        <li><input asp-for="Address" class="form-control" id="address" value="" /></li>
+                        <li><span asp-validation-for="Address" class="text-danger"></span></li>
+                    </ul>
+                    <ul>
+                        <li><label asp-for="Phone">Mobile Number: </label></li>
+                        <li><input asp-for="Phone" class="form-control" id="phone" value="" /></li>
+                        <li><span asp-validation-for="Phone" class="text-danger"></span></li>
+                    </ul>
+                    <div class="element">
+                        <input class="ele-input" type="submit" value="Update">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        var fullNa = $('#fullname').val();
+        var pho = $('#phone').val();
+        var addre = $('#address').val();
+        console.log(fullNa);
+        function decodeToken(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            return JSON.parse(atob(base64));
+        }
+        var accessToken = sessionStorage.getItem("auToken");
+        if (accessToken != null) {
+            const decodedPayload = decodeToken(accessToken);
+            var tokendecode = decodedPayload;
+        }
+        else {
+            tokendecode = null;
+        }
+        if (tokendecode != null) {
+            $.ajax({
+                url: 'https://localhost:44312/User/' + tokendecode.UserID,
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (data) {
+                    $('#user_name').text(data.fullName)
+                },
+                error: function (error) {
+                    console.error('Lỗi khi tải dữ liệu: ' + error);
+                }
+            });
+            var initialData = JSON.parse(JSON.stringify(@Html.Raw(TempData["InitialData"])));
+            if (initialData.fullName == null &&
+                initialData.phone == null &&
+                initialData.address == null
+            ) {
+                $.ajax({
+                    url: 'https://localhost:44312/User/' + tokendecode.UserID,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        $('#fullname').val(data.fullName);
+                        $('#phone').val(data.phone);
+                        $('#address').val(data.address);
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            }
+            else {
+                var data = {
+                    // fullName =address,
+                    // phone = pho,
+                    // address = addre
+                };
+                $.ajax({
+                    url: 'https://localhost:44312/User/' + tokendecode.UserID,
+                    method: 'PUT',
+                    data: JSON.stringify(initialData),
+                    contentType: "application/json",
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        swal.fire({
+                            icon: 'success',
+                            title: 'Edit Profile Successfully!',
+                            text: 'Thanks you for using!!',
+                        }).then(function () {
+                            window.location.href = "/Home/Home";
+                        });
+                    },
+                    error: function (jqXHR) {
+                        if (jqXHR.status === 0) {
+                            window.location.href = "/Error/Error500";
+                        } else {
+                            // Handle other types of errors
+                            console.error("Other error occurred: " + jqXHR.status);
+                        }
+                    }
+                });
+            }
+        }
+    });
+</script>

@@ -1,0 +1,13 @@
+﻿@keyframes TongueAnim {
+    0% {
+        transform: skewY(0deg);
+    }
+
+    50% {
+        transform: skewY(10deg);
+    }
+
+    100% {
+        transform: skewY(-10deg);
+    }
+}

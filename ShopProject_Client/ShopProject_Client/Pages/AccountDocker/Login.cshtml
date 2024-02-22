@@ -1,0 +1,194 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phone Love</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="N-Air Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <!-- <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> -->
+    <meta charset utf="8">
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--fonts-->
+    <!--bootstrap-->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--coustom css-->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <!--shop-kart-js-->
+    <script src="~/js/simpleCart.min.js"></script>
+    <!--default-js-->
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <!--bootstrap-js-->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!--script-->
+    <!-- FlexSlider -->
+    <script src="~/js/imagezoom.js"></script>
+    <script defer src="~/js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
+    <script src="assets\libs\sweetalert2\sweetalert2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets\js\pages\sweet-alerts.init.js"></script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
+    <!-- //FlexSlider-->
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo4">
+                    <a href="/Home/Home"><img class="img-logo" src="~/images/logo.png" alt="/" /></a>
+                    <a href="/AccountDocker/Login">Login</a>
+                </div>
+                <div class="login-bars">
+                    <a class="btn btn-default log-bar" href="/AccountDocker/Register" role="button">Sign up</a>
+                    <a class="btn btn-default log-bar" href="/AccountDocker/Login" role="button">Sign in</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reg-form" style="display: flex;justify-content: center;">
+        <div class="containers" style="width: 36% !important;background: white;border-radius: 2rem;">
+            <div class="reg" style="  margin-top: 2rem;margin-bottom: 2rem;">
+                <p>Welcome, please enter the following details to continue.</p>
+                <p>If you have previously Login with us, <a href="/AccountDocker/Register">Sign up</a></p>
+                <form class="form-body" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <ul>
+                        <li><label asp-for="UserName"></label></li>
+                        <li><input asp-for="UserName" class="form-control" id="username" value="" /></li>
+                        <li><span asp-validation-for="UserName" class="text-danger"></span></li>
+                    </ul>
+                    <ul>
+                        <li><label asp-for="Password"></label></li>
+                        <li><input asp-for="Password" class="form-control" type="password" id="password" value="" /></li>
+                        <li><span asp-validation-for="Password" class="text-danger"></span></li>
+                    </ul>
+                    <div class="element">
+                        <p class="click"><a href="/AccountDocker/ForgotPassword">Forgot password?</a></p>
+                        <input class="ele-input" type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function decodeToken(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            return JSON.parse(atob(base64));
+        }
+        $(document).ready(function () {
+            // Lấy dữ liệu ban đầu từ TempData
+            var initialData = @Html.Raw(TempData["InitialData"]);
+            console.log(initialData);
+            if (initialData.username != null &&
+                initialData.password != null
+            ) {
+
+                $.ajax({
+                    type: "GET",
+                    url: "https://localhost:44312/Account/Login?email=" + initialData.username + "&pass=" + initialData.password, // Replace with the actual URL
+                    data: JSON.stringify(initialData),
+                    contentType: "application/json",
+                    success: function (response) {
+                        // Xử lý kết quả từ AJAX request
+                        $.ajaxSetup({
+                            beforeSend: function (xhr, settings) {
+                                // Thiết lập tiêu đề Authorization với token từ response
+                                xhr.setRequestHeader('Authorization', 'Bearer ' + response.accessToken);
+                            }
+                        });
+                        sessionStorage.setItem("auToken", response.accessToken);
+                        const decodedPayload = decodeToken(response.accessToken);
+                        var tokendecode = decodedPayload;
+                        swal.fire({
+                            icon: 'success',
+                            title: 'Login Successfully!',
+                            text: 'Welcome to PhoneLoveShop!!',
+                        }).then(function () {
+                            if (tokendecode.admin == "True") {
+                                window.location.href = "/Admin/Dashboard";
+                            }
+                            else {
+                                window.location.href = "/Home/Home";
+                            }
+                        });
+
+                    },
+                    error: function (jqXHR) {
+                        console.log(jqXHR);
+                        var response = jqXHR.responseJSON;
+                        if (jqXHR.status === 400) {
+                            if (response.message == "UnAcc") {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Login Failed!',
+                                    text: 'Email and password was not exist. Please try again.',
+                                    confirmButtonText: 'Close'
+                                });
+                            }
+                            else if (response.message == "Verified") {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Login Failed!',
+                                    text: 'Email was not verified. Please try again.',
+                                    confirmButtonText: 'Close'
+                                });
+                            }
+                            else if (response.message == "Ban") {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Login Failed!',
+                                    text: 'Email locked. Please try again.',
+                                    confirmButtonText: 'Close'
+                                });
+                            }
+                        } else {
+                            if (jqXHR.status === 0) {
+                                window.location.href = "/Error/Error500";
+                            } else {
+                                // Handle other types of errors
+                                console.error("Other error occurred: " + jqXHR.status);
+                            }
+                        }
+                    }
+                });
+            }
+        });
+        $(document).ready(function () {
+            var initialData = @Html.Raw(TempData["InitialData"]);
+            console.log(initialData);
+            if (initialData.username != null) {
+                $("#username").val(initialData.username);
+            }
+            if (initialData.password != null) {
+                $("#password").val(initialData.password);
+            }
+        });
+    </script>
+    <!-- //login-page -->
+</body>
+</html>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
