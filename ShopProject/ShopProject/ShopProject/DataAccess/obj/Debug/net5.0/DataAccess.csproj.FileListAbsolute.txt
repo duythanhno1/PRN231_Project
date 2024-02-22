@@ -1,0 +1,126 @@
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+D:\PRN231\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+D:\PRN231\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll

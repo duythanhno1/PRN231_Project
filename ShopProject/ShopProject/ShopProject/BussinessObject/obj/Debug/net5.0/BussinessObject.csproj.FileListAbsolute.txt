@@ -1,0 +1,105 @@
+D:\PRN231\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+D:\PRN231\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+D:\PRN231\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+D:\PRN231\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+D:\PRN231\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+D:\PRN231\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+C:\Users\khanh\Documents\C#\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+C:\Users\vvvyt\Documents\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+C:\Users\Admin\OneDrive - Đại học FPT- FPT University\Desktop\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+C:\Users\voduy\Documents\Zalo Received Files\PRN231\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
+D:\Ky 8\PRN231\project\Project\Project\ShopProject\ShopProject\ShopProject\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
