@@ -531,11 +531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\voduy\\Documents\\Zalo Received Files\\PRN231\\Project\\Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+      "projectUniqueName": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
       "projectName": "ShopProject_Client",
-      "projectPath": "C:\\Users\\voduy\\Documents\\Zalo Received Files\\PRN231\\Project\\Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+      "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
       "packagesPath": "C:\\Users\\voduy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\voduy\\Documents\\Zalo Received Files\\PRN231\\Project\\Project\\ShopProject_Client\\ShopProject_Client\\obj\\",
+      "outputPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\voduy\\AppData\\Roaming\\NuGet\\NuGet.Config",

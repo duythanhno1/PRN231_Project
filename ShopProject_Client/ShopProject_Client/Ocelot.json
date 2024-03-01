@@ -7,7 +7,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/{id}",
@@ -31,7 +31,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/ForgotPassword?email={email}",
@@ -43,7 +43,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/Register",
@@ -55,7 +55,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/Login",
@@ -67,7 +67,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/search?search={search}",
@@ -79,7 +79,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/CountAccount",
@@ -91,7 +91,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/AdminAccount?id={id}",
@@ -103,7 +103,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Account/Verified?id={id}",
@@ -117,7 +117,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/Cart?id={id}",
@@ -129,7 +129,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/{id}",
@@ -141,7 +141,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts?proid={proid}&userId={userId}",
@@ -153,7 +153,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/Pluss?id={id}",
@@ -165,7 +165,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/Sub?id={id}",
@@ -177,7 +177,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/TotalPrice?id={id}",
@@ -189,7 +189,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/CountCart?id={id}",
@@ -201,7 +201,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Carts/search?search={search}",
@@ -214,7 +214,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Categories",
@@ -226,7 +226,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Categories/{id}",
@@ -238,7 +238,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Categories/search?search={search}",
@@ -251,7 +251,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order",
@@ -263,7 +263,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/{id}",
@@ -275,7 +275,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/Pluss?id={id}",
@@ -287,7 +287,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/Sub?id={id}",
@@ -299,7 +299,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/CountOrder",
@@ -311,7 +311,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/TotalPriceOrder",
@@ -323,7 +323,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/OrderHistory?id={id}",
@@ -335,7 +335,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Order/ConfirmOrder?id={id}",
@@ -349,7 +349,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/OrderDetail?id={id}",
@@ -361,7 +361,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/OrderDetail",
@@ -373,7 +373,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/OrderDetail/{id}",
@@ -385,7 +385,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/OrderDetail/TotalPrice?id={id}",
@@ -399,7 +399,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Products",
@@ -411,7 +411,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Products/{id}",
@@ -423,7 +423,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Products/search?search={search}",
@@ -435,7 +435,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Products/searchCate?id={id}",
@@ -447,7 +447,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/Products/CountProduct",
@@ -461,7 +461,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/User",
@@ -473,7 +473,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/User/{id}",
@@ -485,7 +485,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3000
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/User/search?search={search}",

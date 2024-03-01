@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "amP1nrraepsUba2G5QAg5e7D97h2RfMY7uLaLhXJ17+b29x65JmjAgf2JMFMjaYR+XSECfug4LZP30ZcSP1Vsg==",
+  "dgSpecHash": "4ruz+vgcy0hTSVGyFDQMtCjXdgmsl63CVuI+gAIzSbgcBP6z4A0ztMcLdMPqvSYauCbaGW0/Sg1W6Xw5LrXIXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\voduy\\Documents\\Zalo Received Files\\PRN231\\Project\\Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+  "projectFilePath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\voduy\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\voduy\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.3\\microsoft.aspnetcore.jsonpatch.3.1.3.nupkg.sha512",
