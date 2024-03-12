@@ -1,0 +1,114 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\ky 8\\prn231\\project\\prn231_project-main\\shopproject_client\\shopproject_client\\pages\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\pages\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\ky 8\\prn231\\project\\prn231_project-main\\shopproject_client\\shopproject_client\\pages\\productdocker\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\pages\\productdocker\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\ky 8\\prn231\\project\\prn231_project-main\\shopproject_client\\shopproject_client\\pages\\orderdocker\\orderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\pages\\orderdocker\\orderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\ky 8\\prn231\\project\\prn231_project-main\\shopproject_client\\shopproject_client\\pages\\accountdocker\\verified.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\pages\\accountdocker\\verified.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 118,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 118,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeLayout.cshtml",
+              "DocumentMoniker": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\Shared\\HomeLayout.cshtml",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Pages\\Shared\\HomeLayout.cshtml",
+              "ToolTip": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\Shared\\HomeLayout.cshtml",
+              "RelativeToolTip": "ShopProject_Client\\Pages\\Shared\\HomeLayout.cshtml",
+              "ViewState": "AQIAAC4AAAAAAAAAAADwvz8AAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T13:57:27.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\ProductDocker\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Pages\\ProductDocker\\ProductDetail.cshtml",
+              "ToolTip": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\ProductDocker\\ProductDetail.cshtml",
+              "RelativeToolTip": "ShopProject_Client\\Pages\\ProductDocker\\ProductDetail.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFUAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T13:57:20.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderHistory.cshtml",
+              "DocumentMoniker": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\OrderDocker\\OrderHistory.cshtml",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Pages\\OrderDocker\\OrderHistory.cshtml",
+              "ToolTip": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\OrderDocker\\OrderHistory.cshtml",
+              "RelativeToolTip": "ShopProject_Client\\Pages\\OrderDocker\\OrderHistory.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFUAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T13:57:13.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Verified.cshtml",
+              "DocumentMoniker": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\AccountDocker\\Verified.cshtml",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Pages\\AccountDocker\\Verified.cshtml",
+              "ToolTip": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\Pages\\AccountDocker\\Verified.cshtml",
+              "RelativeToolTip": "ShopProject_Client\\Pages\\AccountDocker\\Verified.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv0cAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T13:56:53.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -526,19 +526,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\voduy\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+      "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
       "projectName": "ShopProject_Client",
-      "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
-      "packagesPath": "C:\\Users\\voduy\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\obj\\",
+      "projectPath": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Ky 8\\PRN231\\project\\PRN231_Project-main\\ShopProject_Client\\ShopProject_Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\voduy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -558,6 +558,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -588,7 +593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
