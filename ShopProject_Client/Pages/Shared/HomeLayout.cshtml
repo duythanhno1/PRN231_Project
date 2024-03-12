@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>G5 Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="N-Air Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <meta charset utf="8">
+    <link href='~//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+ 
+    <!--fonts-->
+    <!--bootstrap-->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--coustom css-->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <!--shop-kart-js-->
+    <script src="~/js/simpleCart.min.js"></script>
+    <!--default-js-->
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <!--bootstrap-js-->
+    <link href="~/assets/libs/sweetalert2/sweetalert2.min.css" />
+    <script src="~/js/bootstrap.min.js"></script>
+    <!--script-->
+    <!-- FlexSlider -->
+    <script src="~/js/imagezoom.js"></script>
+    <script defer src="~/js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
+    <!-- Thư viện jQuery -->
+@*     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> *@
+
+  
+
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            // Lấy giá trị token từ sessionStorage
+            var token = sessionStorage.getItem('auToken');
+
+            
+            if (token != null) {
+                // Nếu có token, hiển thị phần tử có class 'pro-user-name' và ẩn phần tử có class 'no-token'
+                $('#have_token').show();
+                $('#no_token').hide();
+            } else {
+                // Nếu không có token, ẩn phần tử có class 'pro-user-name' và hiển thị phần tử có class 'no-token'
+                $('#have_token').hide();
+                $('#no_token').show();
+            }
+        });
+
+    </script>
+    <script>
+        function clearSessionStorage() {
+            sessionStorage.clear();
+           
+        }
+    </script>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="/Home/Home"><img src="~/images/logo1.png" style="width: 100px; height: 100px;" alt="/" /></a>
+                </div>
+                <div class="login-bars">
+                    <div class="dropdown" id="have_token">
+                        <a href="#" id="user_name">UserName</a>
+                        <div class="dropdown-content">
+                            <h5 class="m-0 text-white">
+                                Welcome !
+                            </h5>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Admin/Dashboard" id="adminbutton">Management</a>
+                            <a href="/AccountDocker/UpdateAccount">My account</a>
+                            <a href="/AccountDocker/ChangePassword">Change password</a>
+                            <a href="/OrderDocker/OrderHistory">Order history</a>
+                            <a id="clearSessionStorageLink;javascript:void(0);" href="/AccountDocker/Login" onclick="clearSessionStorage()">Logout</a>
+                        </div>
+                        <script>
+                            function decodeToken(token) {
+                                const base64Url = token.split('.')[1];
+                                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                                return JSON.parse(atob(base64));
+                            }
+                            $(document).ready(function () {
+                                // Lấy giá trị token từ sessionStorage
+                                var token = sessionStorage.getItem('auToken');
+                                if (token != null) {
+                                    const decodedPayload = decodeToken(token);
+                                    var tokendecode = decodedPayload;
+                                    if (tokendecode.admin == "True") {
+                                        $('#adminbutton').show();
+                                    }
+                                    else {
+                                        $('#adminbutton').hide();
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                    <div id="no_token">
+                        <a class="btn btn-default log-bar" href="/AccountDocker/Register" role="button">Sign up</a>
+                        <a class="btn btn-default log-bar" href="/AccountDocker/Login" role="button">Sign In</a>
+                    </div>
+                    <div class="cart box_1" id="cart_have_token">
+                        <a href="/CartDocker/Cart">
+                            <h3>
+                                <div class="total">
+                                    <span class="cart" id="total_get_cart"></span>(<span id="count_cart" class="cart"></span>)
+                                </div>
+                            </h3>
+                            <img class="img-cart" src="~/images/shopping-cart.png" />
+                        </a>
+
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="header-botom">
+                <div class="content white">
+                    <nav class="navbar navbar-default nav-menu" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!--/.navbar-header-->
+
+                        <div class="collapse navbar-collapse collapse-pdng" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav nav-font">
+                                <li>
+                                    <a href="/Home/Home">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/ProductDocker/Product">Shop</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-column columns-3">
+                                        <div class="row">
+                                            <div class="col-sm-4 menu-img-pad">
+                                                <ul class="multi-column-dropdown" id="category_list1">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="/Catch">About Us</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    <div class="footer-grid">
+        <div class="container">
+            <div class="col-md-2 re-ft-grd">
+                <h3>Categories</h3>
+                <ul class="categories">
+                    <li><a href="#">IPhone</a></li>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">OPPO</a></li>
+                    <li><a href="#">Nokia</a></li>
+                    <li><a href="#">Realme</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 re-ft-grd">
+                <h3>Short links</h3>
+                <ul class="shot-links">
+                    <li><a href="~/contact.html">Catch</a></li>
+                    <li><a href="~/contact.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 re-ft-grd">
+                <h3>Social</h3>
+                <ul class="social">
+                    <li><a href="#" class="fb">facebook</a></li>
+                    <li><a href="#" class="twt">twitter</a></li>
+                    <li><a href="#" class="gpls">g+ plus</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <div class="col-md-2 re-ft-grd">
+                <div class="bt-logo">
+                    <div class="logo">
+                        <img href="~/index.html" class="ft-log"><img src="~/images/logofooter.png"></img></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="copy-rt">
+            <div class="container">
+                <p>&copy;   G5 Shop - Connecting Love Through Modern Technology. © 2023 N-AIR. All Rights Reserved. Designed by <a href="http://www.w3layouts.com">G5 Shop</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addcart(link) {
+            var dataId = link.getAttribute('data-id');
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken == null) {
+                swal.fire({
+                    icon: 'warning',
+                    title: 'Cart!!',
+                    text: 'You must be login to addcart',
+                }).then(function () {
+                    window.location.href = "/AccountDocker/Login";
+                });
+            }
+            const decodedPayload = decodeToken(accessToken);
+            var tokendecode = decodedPayload;
+            console.log(tokendecode);
+            console.log(dataId);
+            // Đảm bảo rằng URL được định dạng chính xác và trỏ đúng vào điểm cuối API của bạn
+            $.ajax({
+                url: 'https://localhost:44312/Carts?proid=' + dataId + '&userId=' + tokendecode.UserID,
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (data) {
+                    swal.fire({
+                        icon: 'success',
+                        title: 'AddCart Successfully!',
+                        text: 'Do you want shopping more?',
+                    }).then(function () {
+                        window.location.href = "/Home/Home";
+                    });
+                },
+                error: function (error) {
+                    console.error('Lỗi khi tải dữ liệu: ' + error);
+                }
+            });
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken != null) {
+                const decodedPayload = decodeToken(accessToken);
+                var tokendecode = decodedPayload;
+            }
+            else {
+                tokendecode = null;
+            }
+            if (tokendecode != null) {
+                $.ajax({
+                    url: 'https://localhost:44312/User/' + tokendecode.UserID,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        $('#user_name').text(data.fullName)
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Lấy giá trị token từ sessionStorage
+            var token = sessionStorage.getItem('auToken');
+
+            // Kiểm tra xem token có tồn tại hay không
+            if (token != null) {
+                // Nếu có token, hiển thị phần tử có class 'pro-user-name' và ẩn phần tử có class 'no-token'
+                $('#have_token').show();
+                $('#no_token').hide();
+                $('#cart_have_token').show();
+                $('#cart_no_token').hide();
+            } else {
+                // Nếu không có token, ẩn phần tử có class 'pro-user-name' và hiển thị phần tử có class 'no-token'
+                $('#have_token').hide();
+                $('#no_token').show();
+                $('#cart_have_token').hide();
+                $('#cart_no_token').show();
+            }
+        });
+
+    </script>
+    <script>
+        function clearSessionStorage() {
+            sessionStorage.clear();
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken != null) {
+                const decodedPayload = decodeToken(accessToken);
+                var tokendecode = decodedPayload;
+                if (tokendecode != null) {
+                    $.ajax({
+                        url: 'https://localhost:44312/Carts/TotalPrice?id=' + tokendecode.UserID,
+                        method: 'GET',
+                        headers: {
+                            'Authorization': 'Bearer ' + accessToken
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            $("#total_get_cart").text("$" + data.totalPrice + ".00 ")
+                        },
+                        error: function (error) {
+                            $("#total_get_cart").text("$" + 0 + ".00 ")
+                        }
+                    });
+                }
+            }
+            else {
+                tokendecode = null;
+            }
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken != null) {
+                const decodedPayload = decodeToken(accessToken);
+                var tokendecode = decodedPayload;
+                $.ajax({
+                    url: 'https://localhost:44312/Carts/CountCart?id=' + tokendecode.UserID,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var h2Element = document.getElementById("count_cart");
+                        h2Element.textContent = data.count;
+                    },
+                    error: function (error) {
+                        var h2Element = document.getElementById("count_cart");
+                        h2Element.textContent = 0;
+                    }
+                });
+            }
+            else {
+                tokendecode = null;
+            }
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var accessToken = sessionStorage.getItem("auToken");
+            $.ajax({
+                type: "GET",
+                url: "https://localhost:44312/Categories",
+                dataType: "json",
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (responseData) {
+                    console.log(responseData);
+                    $.each(responseData, function (index, data) {
+
+                        var productHtml = `
+                                                                 <li><a onclick="searchPhoneByCate(this)" data-id="${data.categoryId}">${data.categoryName}</a></li>
+                                                                                             `;
+                        $("#category_list1").append(productHtml);
+                    });
+                    console.log("Data loaded successfully!");
+                },
+                error: function (jqXHR) {
+                    if (jqXHR.status === 0) {
+                        window.location.href = "/Error/Error500";
+                    } else {
+                        // Handle other types of errors
+                        console.error("Other error occurred: " + jqXHR.status);
+                    }
+                }
+            });
+        });
+        function searchPhoneByCate(link) {
+            var accessToken = sessionStorage.getItem("auToken");
+            var id = link.getAttribute('data-id');
+            console.log(id);
+            $.ajax({
+                type: "GET",
+                url: "https://localhost:44312/Products/searchCate?id=" + id,
+                dataType: "json",
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (response) {
+                    var j = JSON.stringify(response);
+                    var productContainer = $("<div></div>");
+                    console.log("da vao day" + j);
+                    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" + response.length);
+                    if (response.length === 0) {
+                        $("#banner").hide();
+                        var productHtml =
+                            `<div></div>
+                                                                                                    <p style="font-size: 30px;text-align: center;margin-top: 3rem;">There are no items in your product.</p>
+                                                                                        <div></div>`;
+                        productContainer.append(productHtml);
+                    }
+                    else {
+                        $("#banner").hide();
+                        $.each(response, function (index, data) {
+                            var productHtml = `
+                                                                                                                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                                                                                                                              <div class="ih-item square effect3 bottom_to_top">
+                                                                                                                                 <div class="bottom-2-top">
+                                                                                                                                    <div class="img"> <img class="img-responsive gri-wid" src="/assets/images/${data.productImage}" alt="/" /></div>
+                                                                                                                                    <div class="info">
+                                                                                                                                       <div class="pull-left styl-hdn">
+                                                                                                                                          <h3>${data.productName}</h3>
+                                                                                                                                       </div>
+                                                                                                                                       <div class="pull-right styl-price">
+                                                                                                                                        <p><a href="#" class="item_add" onclick="addcart(this)" data-id="${data.productID}"><span class="glyphicon glyphicon-shopping-cart grid-cart"
+                                                                                                                                             aria-hidden="true"></span>
+                                                                                                                                             <span class=" item_price">$${data.productPrice} $</span></a>
+                                                                                                                                          </p>
+                                                                                                                                       </div>
+                                                                                                                                       <div class="clearfix"></div>
+                                                                                                                                    </div>
+                                                                                                                                 </div>
+                                                                                                                              </div>
+                                                                                                                              <div class="clearfix"></div>
+                                                                                                                              <div class="quick-view">
+                                                                                                                                 <a href="/ProductDocker/ProductDetail?id=`+ data.productID + `">Quick view</a>
+                                                                                                                              </div>
+                                                                                                                           </div>`;
+                            productContainer.append(productHtml);
+                        });
+                    }
+
+                    $("#product-details").html(productContainer.html());
+                }
+            });
+        }
+    </script>
+</body>
+</html>

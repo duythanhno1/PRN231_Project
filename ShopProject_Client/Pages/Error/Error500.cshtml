@@ -1,0 +1,104 @@
+﻿@page
+@model ShopProject_Client.Pages.Error.Error500Model
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            width: 98vw;
+            height: 91vh;
+            color: #fff;
+            font-family: 'Arial Black';
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .error500 {
+            background: white;
+            border-radius: 1rem;
+            width: 38rem;
+            height: 23rem;
+        }
+        .error-num {
+            font-size: 8em;
+            color: black;
+        }
+
+        .eye {
+            background: black;
+            border-radius: 50%;
+            display: inline-block;
+            height: 100px;
+            position: relative;
+            width: 100px;
+        }
+
+            .eye::after {
+                background: white;
+                border-radius: 50%;
+                bottom: 56.1px;
+                content: '';
+                height: 33px;
+                position: absolute;
+                right: 33px;
+                width: 33px;
+            }
+
+        p {
+            margin-bottom: 4em;
+            color: black;
+        }
+
+        a {
+            display: flex;
+            background: #004aad;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: center;
+            width: 7rem;
+            height: 2rem;
+            margin-left: 15.5rem;
+            text-align: center;
+            border-radius: 1rem;
+            padding-top: 0.5rem;
+        }
+
+            a:hover {
+                color: #d3d3d3;
+            }</style>
+</head>
+<body>
+    <div class="error500">
+        <span class='error-num'>5</span>
+        <div class='eye'></div>
+        <div class='eye'></div>
+        <p class='sub-text'>Oh eyeballs! Server Refused Connection. We're <i>looking</i> to see what happened.</p>
+        <a href="/Home/Home">Go back</a>
+    </div>
+    <script>
+        $("body").mousemove(function (event) {
+        var e = $(".eye");
+        var x = e.offset().left + e.width() / 2;
+        var y = e.offset().top + e.height() / 2;
+        var rad = Math.atan2(event.pageX - x, event.pageY - y);
+        var rot = rad * (180 / Math.PI) * -1 + 180;
+        e.css({
+        "-webkit-transform": "rotate(" + rot + "deg)",
+        transform: "rotate(" + rot + "deg)"
+        });
+        });
+
+    </script>
+    
+</body>
+</html>

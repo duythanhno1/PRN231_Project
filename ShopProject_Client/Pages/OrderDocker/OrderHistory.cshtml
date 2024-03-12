@@ -1,0 +1,409 @@
+﻿@page
+@model ListOrderHistoryModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function clearSessionStorage() {
+            sessionStorage.clear();
+           
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var token = sessionStorage.getItem('auToken');
+            if (token == null) {
+                window.location.href = "/Error/Error401";
+            }
+        });
+    </script>
+    <title>G5 Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="N-Air Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <meta charset utf="8">
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+  
+    <!--fonts-->
+    <!--bootstrap-->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--coustom css-->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <!--shop-kart-js-->
+    <script src="~/js/simpleCart.min.js"></script>
+    <!--default-js-->
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <!--bootstrap-js-->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!--script-->
+    <!-- FlexSlider -->
+    <script src="~/js/imagezoom.js"></script>
+    <script defer src="~/js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
+
+
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
+    <!-- //FlexSlider-->
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            // Lấy giá trị token từ sessionStorage
+            var token = sessionStorage.getItem('auToken');
+
+            // Kiểm tra xem token có tồn tại hay không
+            if (token != null) {
+                // Nếu có token, hiển thị phần tử có class 'pro-user-name' và ẩn phần tử có class 'no-token'
+                $('#have_token').show();
+                $('#no_token').hide();
+            } else {
+                // Nếu không có token, ẩn phần tử có class 'pro-user-name' và hiển thị phần tử có class 'no-token'
+                $('#have_token').hide();
+                $('#no_token').show();
+            }
+        });
+
+    </script>
+   
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo2">
+                    <a href="/Home/Home"><img class="img-logo" src="~/images/logo1.png" style="width: 100px; height: 100px;" alt="/" /></a>
+                    <a>Order History</a>
+                </div>
+                <div class="login-bars">
+                    <div class="dropdown" id="have_token">
+                        <a href="#" id="user_name">UserName</a>
+                        <div class="dropdown-content">
+                            <h5 class="m-0 text-white">
+                                Welcome !
+                            </h5>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Admin/Dashboard" id="adminbutton">Management</a>
+                            <a href="/AccountDocker/UpdateAccount">My account</a>
+                            <a href="/AccountDocker/ChangePassword">Change password</a>
+                            <a href="/OrderDocker/OrderHistory">Order history</a>
+                            <a id="clearSessionStorageLink;javascript:void(0);" href="/AccountDocker/Login" onclick="clearSessionStorage()">Logout</a>
+                        </div>
+                        <script>
+                            function decodeToken(token) {
+                                const base64Url = token.split('.')[1];
+                                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                                return JSON.parse(atob(base64));
+                            }
+                            $(document).ready(function () {
+                                // Lấy giá trị token từ sessionStorage
+                                var token = sessionStorage.getItem('auToken');
+                                if (token != null) {
+                                    const decodedPayload = decodeToken(token);
+                                    var tokendecode = decodedPayload;
+                                    if (tokendecode.admin == "True") {
+                                        $('#adminbutton').show();
+                                    }
+                                    else {
+                                        $('#adminbutton').hide();
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                    <div id="no_token">
+                        <a class="btn btn-default log-bar" href="/AccountDocker/Register" role="button">Sign up</a>
+                        <a class="btn btn-default log-bar" href="/AccountDocker/Login" role="button">Sign In</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="order-history">
+    <div class="footer-table">
+        <div class="yl931K">Order Id</div>
+        <div class="+4E7yJ">Order Date</div>
+        <div class="pZMZa7">Order Quantity</div>
+        <div class="lKFOxX">Shipper Date</div>
+        <div class="lKFOxX2">Note</div>
+    </div>
+    <div class="cart-header" id="history-list">
+
+       
+    </div>
+    </div>
+
+<div id="list-details" class="modal fade" tabindex="-1" role="dialog"
+     aria-labelledby="full-width-modalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-full">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="full-width-modalLabel">Order Details</h4>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">
+                    ×
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-all">
+                    <div class="all-left">
+                        <div class="text-allleft">
+                            <h5>Full name: </h5>
+                            <p id="Username"></p>
+                        </div>
+                        <div class="text-allleft">
+                            <h5>Address: </h5>
+                            <p id="Address"></p>
+                        </div>
+                        <div class="text-allleft">
+                            <h5>Phone: </h5>
+                            <p id="Phone"></p>
+                        </div>
+                        <div class="text-allleft">
+                            <h5>Shipper Date: </h5>
+                            <p id="ShipDate">2023-10-31T08:36:06.0689822</p>
+                        </div>
+                        <div class="text-allleft">
+                            <h5>Order Date: </h5>
+                            <p id="OrderDate">2023-10-26T08:36:06.0679987</p>
+                        </div>
+                            <hr style="border-top: 1px solid black !important;    margin-bottom: 7px !important;">
+                        <div class="text-allleft">
+                            <h4>Total: </h4>
+                                <h4 id="totalPrice_Khanh"></h4>
+                        </div>
+                    </div>
+                    <div class="all-right">
+                        <div class="body-right">
+                            <table class="table w-100 nowrap all-table">
+                                <thead>
+                                    <tr class="all-test">
+                                            <th style="padding:1rem !important">Product Image</th>
+                                            <th style ="padding:1rem !important">Product Name</th>
+                                            <th style="padding:1rem !important">Product Quantity</th>
+                                            <th style="padding:1rem !important">Product Price</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="orderdetail-list">
+
+
+                                        
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary waves-effect"
+                        data-dismiss="modal">
+                    Close
+                </button>
+           
+            </div>
+         </div>
+    </div>
+</div>
+
+    <script>
+        // ... Your previous code ...
+
+        $(document).ready(function () {
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken != null) {
+                const decodedPayload = decodeToken(accessToken);
+                var tokendecode = decodedPayload;
+            }
+            else {
+                tokendecode = null;
+            }
+            $.ajax({
+                type: "GET",
+                url: "https://localhost:44312/Order/OrderHistory?id=" + tokendecode.UserID, // Replace with your order API endpoint
+                dataType: "json",
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (responseData) {
+                    $.each(responseData, function (index, data) {
+                            var orderHtml = `
+                                                     <div class="cart-sec simpleCart_shelfItem1">
+
+                                <div class="cart-item-info">
+                                        <ul class="qty3">
+                                        <li>
+                                            <p style="font-weight:700;">${data.orderID}</p>
+                                        </li>
+                                        <li>
+                                            <p>${data.orderDate}</p>
+                                        </li>
+                                        <li>
+                                            <p>${data.orderQuantity}</p>
+                                        </li>
+                                        <li>
+                                            <p>${data.shipperDate}</p>
+                                        </li>
+                                        <li>
+                                            <p>${data.orderNote}</p>
+                                        </li>
+                                        <li>
+                                        <button class="btn-alldetails" type="button" data-toggle="modal" data-target="#list-details" onclick="openDetailModal(this)" data-id="${data.orderID}">Details</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                                            `;
+                            // Add the order row to the DataTable
+                            $("#history-list").append(orderHtml);
+                    });
+                },
+                error: function (jqXHR) {
+                    if (jqXHR.status === 0) {
+                        window.location.href = "/Error/Error500";
+                    } else {
+                        // Handle other types of errors
+                        $("#toal").hide();
+                        var orderHtml = `<p style="font-size: 24px;text-align: center;">There are no items in your order.</p>`;
+                        $("#history-list").append(orderHtml);
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script>
+        $('#list-details').on('hidden.bs.modal', function () {
+            // Xóa nội dung bên trong phần tử #orderdetail-list
+            $("#orderdetail-list").empty();
+        });
+        function openDetailModal(button) {
+            var accessToken = sessionStorage.getItem("auToken");
+            var id = button.getAttribute('data-id');
+            console.log(id);
+            // Đảm bảo rằng URL được định dạng chính xác và trỏ đúng vào điểm cuối API của bạn
+            $.ajax({
+                url: 'https://localhost:44312/OrderDetail?id=' + id,
+                method: 'GET',
+                dataType: "json",
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (responseData) {
+                    console.log(responseData);
+                    $.each(responseData, function (index, data) {
+                        // Build HTML for the order row
+                        var orderHtml = `
+                                                <tr>
+                                                        <td style="text-align:center;"><img class= "img-right" src="/assets/images/${data.productImage}"></img></td>
+                                                <td><div class="all-name">${data.productName}</div></td>
+                                                <td><div class="all-name">${data.productQuantity}</div></td>
+                                                <td><div class="all-name">$${data.orderDetailTotalPrice}</div></td>
+                                                </tr>
+                                        `;
+                        // Add the order row to the DataTable
+                        $("#orderdetail-list").append(orderHtml);
+                    });
+                },
+                error: function (error) {
+                    console.error('Lỗi khi tải dữ liệu: ' + error);
+                }
+            });
+            $.ajax({
+                url: 'https://localhost:44312/Order/' + id,
+                method: 'GET',
+                dataType: "json",
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (data) {
+                    console.log(data);
+                    $("#Username").text(data.fullName);
+                    $("#Address").text(data.address);
+                    $("#Phone").text(data.phone);
+                    $("#ShipDate").text(data.shipperDate);
+                    $("#OrderDate").text(data.orderDate);
+                },
+                error: function (error) {
+                    console.error('Lỗi khi tải dữ liệu: ' + error);
+                }
+            });
+            $.ajax({
+                url: 'https://localhost:44312/OrderDetail/TotalPrice?id=' + id,
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                success: function (data) {
+                    $("#totalPrice_Khanh").text("$" + data.totalPrice);
+                },
+                error: function (error) {
+                    console.error('Lỗi khi tải dữ liệu: ' + error);
+                }
+            });
+
+        }
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken != null) {
+                const decodedPayload = decodeToken(accessToken);
+                var tokendecode = decodedPayload;
+            }
+            else {
+                tokendecode = null;
+            }
+            if (tokendecode != null) {
+                $.ajax({
+                    url: 'https://localhost:44312/User/' + tokendecode.UserID,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        $('#user_name').text(data.fullName)
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

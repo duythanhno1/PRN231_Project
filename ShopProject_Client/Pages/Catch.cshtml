@@ -1,0 +1,46 @@
+﻿@page
+@model ShopProject_Client.Pages.CatchModel
+@{
+    Layout = "~/Pages/Shared/HomeLayout.cshtml";
+}
+<style>
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 50%;
+        position: relative;
+        height: 0;
+    }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+</style>
+<div class="container" style="margin-bottom: 1rem;">
+    <h1 style="font-weight:700; display:flex; justify-content:center;    MARGIN-BOTTOM: 2REM;">About Us</h1>
+    <p style="font-size: 18px; text-align: justify; margin-bottom: 1rem;font-weight:700">
+
+        Welcome to G5 Shop - Where Your Phone Affection Begins!
+        </p>
+    <p style="font-size: 18px; text-align: justify; margin-bottom: 1rem;">
+        At G5 Shop, we specialize in providing exceptional mobile experiences and accompanying you on the incredible journey of mobile technology. We are the ideal destination for those who are passionate about the utility, creativity, and connectivity that mobile devices bring. Founded with love and passion for mobile devices, G5 Shop has become the top destination for all tech enthusiasts.
+    </p>
+    <p style="font-size: 18px; text-align: justify; margin-bottom: 1rem;">
+        At G5 Shop, we take pride in offering a range of top-quality phone products from leading brands in the market. We are committed to always bringing you reliable and high-quality products. From feature-packed smartphones to value-driven mobile devices, we ensure you'll find the perfect choice based on your personal needs.
+    </p>
+    <p style="font-size: 18px; text-align: justify; margin-bottom: 1rem;">
+        We understand that mobile phones are not just information tools but also a part of your daily life. That's why, at G5 Shop, we don't just provide products, but we create a passionate community where you can learn, share, and experience the wonders of mobile technology.
+    </p>
+    <p style="font-size: 18px; text-align: justify; margin-bottom: 1rem;">
+        Our services don't stop at sales; we also commit to providing excellent customer support and care. We are always ready to listen, advise, and assist you at all times. Customer satisfaction is our top priority, and we are ready to accompany you in every aspect of your phone journey.
+    </p>
+    <p style="font-size: 18px; text-align: justify; margin-bottom: 1rem;">
+        We sincerely appreciate your support and trust in G5 Shop. Let's explore and fall in love with the world of mobile technology through G5 Shop, where the affection for phones begins!
+    </p>
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.05335425749!2d105.729851310927!3d10.012451790052312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0882139720a77%3A0x3916a227d0b95a64!2sFPT%20University!5e0!3m2!1svi!2s!4v1699205666594!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>

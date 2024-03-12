@@ -1,0 +1,303 @@
+﻿@page
+@model ShopProject_Client.Pages.ProductDocker.ProductModel
+@{
+    Layout = "~/Pages/Shared/HomeLayout.cshtml";
+}
+
+    <script src="assets\libs\sweetalert2\sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets\js\pages\sweet-alerts.init.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        var token = sessionStorage.getItem('auToken');
+        $.ajax({
+            type: "GET",
+            url: "https://localhost:44312/Products",
+            dataType: "json",
+            headers: {
+                'Authorization': 'Bearer ' + token
+            },
+            success: function (responseData) {
+                var productContainer = $("<div></div>");
+                if (responseData.length === 0) {
+                    var productHtml =
+                        `<div></div>
+                            <p style="font-size: 32px;text-align: center;margin-top: 3rem;">There are no items in your product.</p>
+                                <div></div>
+                                                `;
+                    $("#product-details").append(productHtml);
+                    return;
+                }
+                else {
+                    $.each(responseData, function (index, data) {
+                        var productHtml = `
+                             <div style=" margin-top: 40px;">
+                                                                                            <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                                                                                                  <div class="ih-item square effect3 bottom_to_top">
+                                                                                                     <div class="bottom-2-top">
+                                                                                                        <div class="img"> <img class="img-responsive gri-wid" src="/assets/images/${data.productImage}" alt="/" /></div>
+                                                                                                        <div class="info">
+                                                                                                           <div class="pull-left styl-hdn">
+                                                                                                              <h3>${data.productName}</h3>
+                                                                                                           </div>
+                                                                                                           <div class="pull-right styl-price">
+                                                                                                                              <p><a href="#" class="item_add" onclick="addcart(this)" data-id="${data.productID}"><span class="glyphicon glyphicon-shopping-cart grid-cart"
+                                                                                                                                         aria-hidden="true"></span>
+                                                                                                                 <span class=" item_price">$${data.productPrice}</span></a>
+                                                                                                              </p>
+                                                                                                           </div>
+                                                                                                           <div class="clearfix"></div>
+                                                                                                        </div>
+                                                                                                     </div>
+                                                                                                  </div>
+                                                                                                  <div class="clearfix"></div>
+                                                                                                  <div class="quick-view">
+                                                                                                     <a href="/ProductDocker/ProductDetail?id=`+ data.productID + `">Quick view</a>
+                                                                                                  </div>
+                                                                                               </div>
+                                                                                                   </div>`;
+                        $("#product-details").append(productHtml);
+                    });
+                }
+                console.log("Data loaded successfully!");
+            },
+            error: function (error) {
+                console.log(error);
+                console.error("AJAX request failed: " + error);
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "https://localhost:44312/Categories",
+            dataType: "json",
+            success: function (responseData) {
+                console.log(responseData);
+                $.each(responseData, function (index, data) {
+                    var productHtml = `
+                                                <li><a onclick="searchPhoneByCate(this)" data-id="${data.categoryId}">${data.categoryName}</a></li>
+                                         `;
+                    $("#category_list").append(productHtml);
+                });
+                console.log("Data loaded successfully!");
+            },
+            error: function (jqXHR) {
+                if (jqXHR.status === 0) {
+                    window.location.href = "/Error/Error500";
+                } else {
+                    // Handle other types of errors
+                    console.error("Other error occurred: " + jqXHR.status);
+                }
+            }
+        });
+    });
+    function searchPhoneByCate(link) {
+        var id = link.getAttribute('data-id');
+        console.log(id);
+        $.ajax({
+            type: "GET",
+            url: "https://localhost:44312/Products/searchCate?id=" + id,
+            dataType: "json",
+            success: function (response) {
+                var productContainer = $("<div></div>");
+                console.log("da vao day" + response)
+                $.each(response, function (index, data) {
+                    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" + data.length);
+                    if (Response.length === 0) {
+                        var productHtml =
+                            `<div></div>
+                                                            <p style="font-size: 32px;text-align: center;margin-top: 3rem;">There are no items in your cart.</p>
+                                                                <div></div>
+                                            `;
+                        productContainer.append(productHtml);
+                        return;
+                    }
+                    else {
+                        var productHtml = `
+                           
+                                                                                        <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                                                                                              <div class="ih-item square effect3 bottom_to_top">
+                                                                                                 <div class="bottom-2-top">
+                                                                                                        <div class="img"> <img class="img-responsive gri-wid" src="/assets/images/${data.productImage}" alt="/" /></div>
+                                                                                                    <div class="info">
+                                                                                                       <div class="pull-left styl-hdn">
+                                                                                                          <h3>${data.productName}</h3>
+                                                                                                       </div>
+                                                                                                       <div class="pull-right styl-price">
+                                                                                                                          <p><a href="#" class="item_add" onclick="addcart(this)" data-id="${data.productID}"><span class="glyphicon glyphicon-shopping-cart grid-cart"
+                                                                                                                                     aria-hidden="true"></span>
+                                                                                                             <span class=" item_price">$${data.productPrice}</span></a>
+                                                                                                          </p>
+                                                                                                       </div>
+                                                                                                       <div class="clearfix"></div>
+                                                                                                    </div>
+                                                                                                 </div>
+                                                                                              </div>
+                                                                                              <div class="clearfix"></div>
+                                                                                              <div class="quick-view">
+                                                                                                 <a href="/ProductDocker/ProductDetail?id=`+ data.productID + `">Quick view</a>
+                                                                                              </div>
+                                                                                           </div>
+                                                                               
+                                                                                           `;
+                        productContainer.append(productHtml);
+                    }
+
+                });
+                $("#product-details").html(productContainer.html());
+            }
+        });
+    }
+</script>
+<div class="container">
+    <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel7" data-slide-to="1"></li>
+            <li data-target="#myCarousel7" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/images/iphonepng.gif" alt="Los Angeles" style="width:100%; height: 30rem">
+            </div>
+
+            <div class="item">
+                <img src="~/images/iphonepng2.gif" alt="Chicago" style="width:100%;height: 30rem">
+            </div>
+
+         
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel7" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="products-gallery" style="margin-top: 3rem;">
+    <div class="container">
+        <div class="col-md-9 grid-gallery" style=" font-size: 30px;float: right;background: white;text-align: left;padding: 1rem;font-weight: 700;border-radius: 2rem;">Product(<span id="countpro"></span>)</div>
+        <script>
+            $(document).ready(function () {
+                var accessToken = sessionStorage.getItem("auToken");
+                $.ajax({
+                    url: 'https://localhost:44312/Products/CountProduct',
+                    method: 'GET',
+                    success: function (data) {
+                        console.log(data);
+                        var h2Element = document.getElementById("countpro");
+                        h2Element.textContent = data.count;
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            });
+
+        </script>
+     
+        <div class="col-md-9 grid-gallery" style="float:right;  display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;" id="product-details">
+
+
+           
+        </div>
+        <div class="col-md-3 grid-details">
+            <div class="grid-addon">
+                <section class="sky-form">
+                    <div class="product_right">
+                        <h4 class="m_2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categories</h4>
+                        <div class="tab1">
+                            <ul class="place2" id="category_list">
+                            </ul>
+                        </div>
+
+                        <!--script-->
+                        <script>
+                            $(document).ready(function () {
+                                $(".tab1 .single-bottom").hide();
+                                $(".tab2 .single-bottom").hide();
+                                $(".tab3 .single-bottom").hide();
+                                $(".tab4 .single-bottom").hide();
+                                $(".tab5 .single-bottom").hide();
+
+                                $(".tab1 ul").click(function () {
+                                    $(".tab1 .single-bottom").slideToggle(300);
+                                    $(".tab2 .single-bottom").hide();
+                                    $(".tab3 .single-bottom").hide();
+                                    $(".tab4 .single-bottom").hide();
+                                    $(".tab5 .single-bottom").hide();
+                                })
+
+                            });
+                        </script>
+                        <!-- script -->
+                </section>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<script>
+    function addcart(link) {
+        var dataId = link.getAttribute('data-id');
+        function decodeToken(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            return JSON.parse(atob(base64));
+        }
+        // Lấy dữ liệu từ biểu mẫu
+        var accessToken = sessionStorage.getItem("auToken");
+        if (accessToken == null) {
+            swal.fire({
+                icon: 'warning',
+                title: 'Cart!!',
+                text: 'You must be login to addcart',
+            }).then(function () {
+                window.location.href = "/AccountDocker/Login";
+            });
+        }
+        const decodedPayload = decodeToken(accessToken);
+        var tokendecode = decodedPayload;
+        console.log(tokendecode);
+        console.log(dataId);
+        // Đảm bảo rằng URL được định dạng chính xác và trỏ đúng vào điểm cuối API của bạn
+        $.ajax({
+            url: 'https://localhost:44312/Carts?proid=' + dataId + '&userId=' + tokendecode.UserID,
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer ' + accessToken
+            },
+            success: function (data) {
+                swal.fire({
+                    icon: 'success',
+                    title: 'AddCart Successfully!',
+                    text: 'Do you want shopping more?',
+                }).then(function () {
+                    window.location.href = "/Home/Home";
+                });
+            },
+            error: function (error) {
+                console.error('Lỗi khi tải dữ liệu: ' + error);
+            }
+        });
+    }
+</script>

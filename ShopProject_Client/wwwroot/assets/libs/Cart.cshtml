@@ -1,0 +1,68 @@
+﻿@page
+@model ShopProject_Client.Pages.CartDocker.CartModel
+@{
+    Layout = "~/Pages/Shared/HomeLayout.cshtml";
+}
+
+    <script>
+        $(document).ready(function () {
+            var token = sessionStorage.getItem('authUserID');
+            // Truy vấn danh sách mặt hàng trong giỏ hàng
+            $.ajax({
+                type: "GET",
+                url: "https://localhost:44382/api/Carts?id=" + token, // Thay thế bằng URL thích hợp
+                dataType: "json",
+                success: function (responseData) {
+                    // Duyệt qua danh sách mặt hàng và cập nhật HTML
+                    $.each(responseData, function (index, cartItem) {
+                    var cartItemHtml = `
+                   
+                    <div class="cart-sec simpleCart_shelfItem" >
+                         <div class="cart-item cyc">
+                            <img src="${cartItem.productImage}" class="img-responsive" alt="" />
+                        </div>
+                        <div class="cart-item-info">
+                            <ul class="qty">
+                                <li><p style="font-weight:700;">${cartItem.productName}</p></li>
+
+                                    <input type="number" id="quantity" name="quantity" min="1" value="${cartItem.cartQuantity}"></input>
+                                </li>
+                                <li><p>${cartItem.price}</p></li>
+                                    <li> <div class="close1"><span class="glyphicon glyphicon-trash iconglyphicon" aria-hidden="true"></span></div> </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                                            
+                                        `;
+                        $("#cartList").append(cartItemHtml);
+                    });
+                    console.log("Data loaded successfully!");
+                },
+                error: function (error) {
+                    console.log(error);
+                    console.error("AJAX request failed: " + error);
+                }
+            });
+        });
+    </script>
+
+    <!-- check-out -->
+<div class="check">
+    <div class="container">
+        <h1 class="name-cart">Shopping Cart</h1>
+        <div class="cart-header" id="cartList">
+            
+        </div>
+        <div class="total-prices1">
+            <span>Total</span>
+            <span class="total2">6200.00</span>
+        </div>
+        <div class="checkout">
+            <a class="order2" href="checkout.html">Place Order</a>
+        </div>
+    
+         </div>
+    <div class="clearfix"> </div>
+ </div>
+
