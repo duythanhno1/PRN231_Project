@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj": {}
+    "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj": {}
   },
   "projects": {
-    "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj": {
+    "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj",
-        "packagesPath": "C:\\Users\\voduy\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\obj\\",
+        "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\voduy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,21 +82,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj": {
+    "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\voduy\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\obj\\",
+        "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\voduy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +110,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj"
+              "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\BussinessObject\\BussinessObject.csproj"
               }
             }
           }
@@ -115,6 +120,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -170,21 +180,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj": {
+    "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
+        "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
         "projectName": "Responsitory",
-        "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
-        "packagesPath": "C:\\Users\\voduy\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\obj\\",
+        "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\voduy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -198,8 +208,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj"
+              "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -208,6 +218,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -267,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

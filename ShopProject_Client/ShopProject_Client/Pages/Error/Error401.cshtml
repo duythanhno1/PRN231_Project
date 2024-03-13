@@ -1,0 +1,101 @@
+﻿@page
+@model ShopProject_Client.Pages.Error.Error401Model
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        .page_404 {
+            padding: 40px 0;
+            background: aliceblue;
+            font-family: 'Arvo', serif;
+        }
+
+        body {
+            background: aliceblue !important;
+        }
+
+        .page_404 img {
+            width: 100%;
+        }
+
+        .four_zero_four_bg {
+            background-image: url(https://community.atlassian.com/t5/image/serverpage/image-id/64802i3621101FC598EBCD/image-size/large?v=v2&px=999);
+            height: 270px;
+            background-position: center;
+            width: 479px;
+            text-align: center;
+            border-radius: 1rem;
+        }
+
+
+            .four_zero_four_bg h1 {
+                font-size: 80px;
+                color: red;
+            }
+
+            .four_zero_four_bg h3 {
+                font-size: 80px;
+            }
+
+        .col-sm-10.col-sm-offset-1.text-center {
+            padding: 32rem;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+        }
+
+        .link_404 {
+            color: #fff !important;
+            padding: 10px 20px;
+            background: #004aad;
+            margin: 20px 0;
+            display: inline-block;
+            border-radius: 1rem;
+            text-decoration: none;
+        }
+
+        .contant_box_404 {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .col-sm-12 {
+            display: flex;
+            justify-content: center;
+        }</style>
+</head>
+<body>
+
+    <section class="page_404">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="col-sm-10 col-sm-offset-1  text-center">
+                        <div class="four_zero_four_bg">
+                            <h1 class="text-center ">401</h1>
+
+
+                        </div>
+
+                        <div class="contant_box_404">
+                            <h3 class="h2">
+                                Unauthorized
+                            </h3>
+
+                            <p>The page you are looking for not avaible!</p>
+
+                            <a href="/Home/Home" class="link_404">Go to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

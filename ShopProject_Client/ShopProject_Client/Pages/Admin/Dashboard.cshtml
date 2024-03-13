@@ -1,0 +1,474 @@
+﻿@page
+@model ShopProject_Client.Pages.Admin.DashboardModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>G5 Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta content="Coderthemes" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/images/Admin/logoPL.png">
+
+    <!-- third party css -->
+    <link href="~/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+    <!-- third party css end -->
+    <!-- App css -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        function clearSessionStorage() {
+            sessionStorage.clear();
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            function decodeToken(token) {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                return JSON.parse(atob(base64));
+            }
+            // Lấy dữ liệu từ biểu mẫu
+            var accessToken = sessionStorage.getItem("auToken");
+            if (accessToken != null) {
+                const decodedPayload = decodeToken(accessToken);
+                var tokendecode = decodedPayload;
+            }
+            else {
+                tokendecode = null;
+            }
+            if (tokendecode != null) {
+                $.ajax({
+                    url: 'https://localhost:44312/User/' + tokendecode.UserID,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        $('#user_name').text(data.fullName)
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            }
+        });
+    </script>
+    <script>
+        function decodeToken(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            return JSON.parse(atob(base64));
+        }
+        $(document).ready(function () {
+            var token = sessionStorage.getItem('auToken');
+            if (token == null) {
+                window.location.href = "/Error/Error401";
+            }
+            else {
+                var accessToken = decodeToken(token);
+                console.log(accessToken);
+                console.log(token);
+                if (accessToken.admin == "False") {
+                    window.location.href = "/Error/Error403";
+                }
+            }
+        });
+    </script>
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
+                       href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        
+                        <span class="pro-user-name ml-1" id="user_name">
+                            <i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0 text-white">
+                                Welcome !
+                            </h5>
+                        </div>
+                        <!-- item-->
+
+                        <div class="dropdown-divider"></div>
+                        <a id="javascript:void(0);" href="/Home/Home" class="dropdown-item notify-item">
+                            <i class="fe-log-out"></i>
+                            <span>My Home</span>
+                        </a>
+                        <!-- item-->
+                        <a id="clearSessionStorageLink;javascript:void(0);" href="/AccountDocker/Login" class="dropdown-item notify-item" onclick="clearSessionStorage()">
+                            <i class="fe-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+                      
+                    </div>
+                </li>
+            </ul>
+
+            <!-- LOGO -->
+            <div class="logo-box">
+                <a href="/Admin/Dashboard" class="logo text-center">
+                    <span class="logo-lg">
+
+                        <img class="img-fix" src="~/images/Admin/logoPLAdmin.png" alt="" style="width: 100px; height: 100px;">
+                    </span>
+                    <span class="logo-sm">
+                        <img class="img-fix" src="~/images/Admin/logoPL.png" alt="" height="28">
+                    </span>
+                </a>
+            </div>
+
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li>
+                    <button class="button-menu-mobile waves-effect waves-light">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+
+            <div class="slimscroll-menu">
+
+                <div id="sidebar-menu">
+
+                    <ul class="metismenu" id="side-menu">
+
+                        <li class="menu-title">Navigation</li>
+
+                        <li class="menu_dashboards">
+                            <a href="javascript: void(0);">
+                                <i class="la la-dashboard"></i>
+                                <span id="dashboards">Dashboards</span>
+                            </a>
+                        </li>
+                        <script>
+                            document.getElementById("dashboards").addEventListener("click", function () {
+                                window.location.href = "/Admin/Dashboard";
+                            });
+                        </script>
+                        <li class="menu_dashboards">
+                            <a href="javascript: void(0);">
+                                <i class="fas fa-users"></i>
+                                <span id="account">Account</span>
+                            </a>
+                        </li>
+                        <script>
+                            document.getElementById("account").addEventListener("click", function () {
+                                window.location.href = "/Admin/AdminAccount";
+                            });
+                        </script>
+                        <li class="menu_dashboards">
+                            <a href="javascript: void(0);">
+                                <i class="fab fa-product-hunt"></i>
+                                <span id="product-link">Product</span>
+                            </a>
+                        </li>
+                        <script>
+                            document.getElementById("product-link").addEventListener("click", function () {
+                                window.location.href = "/Admin/AdminProducts";
+                            });
+                        </script>
+                        <li class="menu_dashboards">
+                            <a href="javascript: void(0);">
+                                <i class="mdi mdi-view-list"></i>
+                                <span id="category">Category</span>
+                            </a>
+                        </li>
+                        <script>
+                            document.getElementById("category").addEventListener("click", function () {
+                                window.location.href = "/Admin/AdminCategory";
+                            });
+                        </script>
+                        <li class="menu_dashboards">
+                            <a href="javascript: void(0);">
+                                <i class="mdi mdi-folder-text-outline"></i>
+                                <span id="order">Order</span>
+                            </a>
+                        </li>
+                        <script>
+                            document.getElementById("order").addEventListener("click", function () {
+                                window.location.href = "/Admin/AdminOrder";
+                            });
+                        </script>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title">Static</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row all-row">
+                        <div class="row-item1">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card-box">
+                                    <h4 class="header-title1 mt-0 mb-2">Order</h4>
+                                    <div class="mt-1">
+                                        <div class="text-right1">
+                                            <h2 class="mt-3 pt-1 mb-1" id="countor">9999</h2>
+                                            <p class="text-muted mb-0">Total order</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card-box">
+                                    <h4 class="header-title1 mt-0 mb-2">Account</h4>
+                                    <div class="mt-1">
+                                        <div class="text-right1">
+                                            <h2 class="mt-3 pt-1 mb-1" id="countacc">9999</h2>
+                                            <p class="text-muted mb-0">Total account</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card-box">
+                                    <h4 class="header-title1 mt-0 mb-2">Product</h4>
+                                    <div class="mt-1">
+                                        <div class="text-right1">
+                                            <h2 class="mt-3 pt-1 mb-1" id="countpro">9999</h2>
+                                            <p class="text-muted mb-0">Total product</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+                        <div class="row-item2">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card-box">
+                                    <h4 class="header-title1 mt-0 mb-2">Revenu</h4>
+                                    <div class="mt-1">
+                                        <div class="text-right1">
+                                            <h2 class="mt-3 pt-1 mb-1" id="revenu">9999</h2>
+                                            <p class="text-muted mb-0">Total price</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+
+
+                    </div>
+
+                    <!-- end row -->
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            2023 © G5 Shop theme by <a href="">G5 Shop</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript:void(0);">About Us</a>
+                                <a href="javascript:void(0);">Help</a>
+                                <a href="javascript:void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+        <script>
+            $(document).ready(function () {
+                var accessToken = sessionStorage.getItem("auToken");
+                $.ajax({
+                    url: 'https://localhost:44312/Products/CountProduct',
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var h2Element = document.getElementById("countpro");
+                        h2Element.textContent = data.count;
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            });
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                var accessToken = sessionStorage.getItem("auToken");
+                $.ajax({
+                    url: 'https://localhost:44312/Account/CountAccount',
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var h2Element = document.getElementById("countacc");
+                        h2Element.textContent = data.count;
+                    },
+                    error: function (jqXHR) {
+                        if (jqXHR.status === 0) {
+                            window.location.href = "/Error/Error500";
+                        } else {
+                            // Handle other types of errors
+                            console.error("Other error occurred: " + jqXHR.status);
+                        }
+                    }
+                });
+            });
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                var accessToken = sessionStorage.getItem("auToken");
+                $.ajax({
+                    url: 'https://localhost:44312/Order/CountOrder',
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var h2Element = document.getElementById("countor");
+                        h2Element.textContent = data.count;
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            });
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                var accessToken = sessionStorage.getItem("auToken");
+                $.ajax({
+                    url: 'https://localhost:44312/Order/TotalPriceOrder',
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var h2Element = document.getElementById("revenu");
+                        h2Element.textContent = data.totalPrice + "$";
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi tải dữ liệu: ' + error);
+                    }
+                });
+            });
+
+        </script>
+    </div>
+    <!-- END wrapper -->
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                <i class="mdi mdi-close"></i>
+            </a>
+            <h5 class="m-0 text-white">Settings</h5>
+        </div>
+        <div class="slimscroll-menu">
+            <!-- User box -->
+            <div class="user-box">
+                <div class="user-img">
+                    <img src="~/assets/images/users\user-1.jpg" alt="user-img" title="Mat Helme"
+                         class="rounded-circle img-fluid">
+                    <a href="edit.html" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                </div>
+
+                <h5><a href="javascript: void(0);">Name Account</a> </h5>
+
+            </div>
+
+            <!-- Settings -->
+            <hr class="mt-0">
+
+
+
+
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="~/assets/js/vendor.min.js"></script>
+
+    <!-- Third Party js-->
+    <script src="~/assets/libs/jquery-knob/jquery.knob.min.js"></script>
+    <script src="~/assets/libs/peity/jquery.peity.min.js"></script>
+    <script src="~/assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="~/assets/libs/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/libs/datatables/dataTables.bootstrap4.js"></script>
+    <script src="~/assets/libs/datatables/dataTables.responsive.min.js"></script>
+    <script src="~/assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+    <!-- third party js ends -->
+    <!-- Dashboard init -->
+    <script src="~/assets/js/pages/dashboard-2.init.js"></script>
+
+    <!-- App js -->
+    <script src="~/assets/js/app.min.js"></script>
+
+</body>
+
+</html>

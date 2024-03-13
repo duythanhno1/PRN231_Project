@@ -1,0 +1,215 @@
+﻿@page
+@model ShopProject_Client.Pages.AccountDocker.RegisterModel
+@Html.AntiForgeryToken()
+@{
+	ViewData["Title"] = "Register page";
+	Layout = null;
+}
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>G5 Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="N-Air Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<meta charset utf="8">
+	<!--fonts-->
+	<link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+
+	<!--fonts-->
+	<!--bootstrap-->
+	<link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!--coustom css-->
+	<link href="~/css/style.css" rel="stylesheet" type="text/css" />
+	<!--shop-kart-js-->
+	<script src="~/js/simpleCart.min.js"></script>
+	<!--default-js-->
+	<script src="~/js/jquery-2.1.4.min.js"></script>
+	<!--bootstrap-js-->
+	<script src="~/js/bootstrap.min.js"></script>
+	<!--script-->
+	<!-- FlexSlider -->
+	<script src="~/js/imagezoom.js"></script>
+	<script defer src="~/js/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
+
+	<script src="assets\libs\sweetalert2\sweetalert2.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="assets\js\pages\sweet-alerts.init.js"></script>
+	<script>
+		// Can also be used with $(document).ready()
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlNav: "thumbnails"
+			});
+		});
+	</script>
+	<!-- //FlexSlider-->
+</head>
+<body>
+
+	<script>
+		$(document).ready(function () {
+			// Lấy dữ liệu ban đầu từ TempData
+			if (@Html.Raw(TempData["InitialData"]) != null) {
+				var initialData = @Html.Raw(TempData["InitialData"]);
+				if (initialData.address != null &&
+					initialData.fullName != null &&
+					initialData.password != null &&
+					initialData.email != null &&
+					initialData.phone != null &&
+					initialData.reEnterPassword != null
+				) {
+					if(initialData.password != initialData.reEnterPassword){
+						console.log("111111111111");
+						$("#err").show();
+						return;
+					}
+					$.ajax({
+						type: "POST",
+						url: "https://localhost:44312/Account/Register",
+						data: JSON.stringify(initialData),
+						contentType: "application/json",
+						success: function (response) {
+							swal.fire({
+								icon: 'success',
+								title: 'Register Successfully!',
+								text: 'Please check email to verified berfore login!!',
+							}).then(function () {
+							
+								window.location.href = "/AccountDocker/Login";
+							});
+						},
+						error: function (jqXHR) {
+							console.log(jqXHR);
+							if (jqXHR.status === 400) {
+								if (jqXHR.responseText == "email") {
+									$('#trung').show();
+									return;
+								}
+							} else {
+								if (jqXHR.status === 0) {
+									window.location.href = "/Error/Error500";
+								} else {
+									// Handle other types of errors
+									console.error("Other error occurred: " + jqXHR.status);
+								}
+							}
+						}
+					});
+				}
+			}
+			});
+
+			
+		$(document).ready(function () {
+			if (@Html.Raw(TempData["InitialData"]) != null) {
+				var initialData = @Html.Raw(TempData["InitialData"]);
+				console.log("gan```");
+				console.log(initialData);
+				if (initialData.address != null) {
+					$("#address").val(initialData.address);
+				}
+				if (initialData.fullName != null) {
+					$("#username").val(initialData.fullName);
+				}
+				if (initialData.password != null) {
+					$("#password").val(initialData.password);
+				}
+				if (initialData.reEnterPassword != null) {
+					$("#confirmPassword").val(initialData.reEnterPassword);
+				}
+				if (initialData.email != null) {
+					$("#email").val(initialData.email);
+				}
+				if (initialData.phone != null) {
+					$("#phone").val(initialData.phone);
+				}
+			}
+
+		});
+	</script>
+
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo5">
+					<a href="/Home/Home"><img class="img-logo" src="~/images/logo1.png" style="width: 100px; height: 100px;" alt="/" /></a>
+					<a href="/AccountDocker/Register">Register</a>
+				</div>
+				<div class="login-bars">
+					<a class="btn btn-default log-bar" href="/AccountDocker/Register" role="button">Sign up</a>
+					<a class="btn btn-default log-bar" href="/AccountDocker/Login" role="button">Sign in</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="reg-form" style="display: flex;justify-content: center;">
+		<div class="containers" style="width: 36% !important;background: white;border-radius: 2rem;">
+			<div class="reg" style="  margin-top: 2rem;margin-bottom: 2rem;">
+				<p>Welcome, please enter the following details to continue.</p>
+				<p>If you have previously registered with us, <a href="/AccountDocker/Login">Sign In</a></p>
+				<form class="form-body" method="post" id="validForm">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<ul>
+						<li><label asp-for="Fullname"></label></li>
+						<li><input asp-for="Fullname" class="form-control" id="username" value="" /></li>
+						<li><span asp-validation-for="Fullname" class="text-danger"></span></li>
+					</ul>
+					<ul>
+						<li><label asp-for="Email"></label></li>
+						<li><input asp-for="Email" class="form-control" id="email" value="" /></li>
+						<li><span asp-validation-for="Email" class="text-danger"></span></li>
+					</ul>
+					<ul>
+						<li><label asp-for="Password"></label></li>
+						<li><input asp-for="Password" class="form-control" type="password" id="password" value="" /></li>
+						<li><span asp-validation-for="Password" class="text-danger"></span></li>
+					</ul>
+					<ul>
+						<li><label >Re-enterPassword</label></li>
+						<li><input asp-for="Confirm" class="form-control" type="password" id="confirmPassword" value="" /></li>
+						<li><span asp-validation-for="Confirm" class="text-danger"></span></li>
+					</ul>
+					<ul>
+						<li><label asp-for="Address"></label></li>
+						<li><input asp-for="Address" class="form-control" id="address" value="" /></li>
+						<li><span asp-validation-for="Address" class="text-danger"></span></li>
+					</ul>
+					<ul>
+						<li><label asp-for="Phone"></label></li>
+						<li><input asp-for="Phone" class="form-control" id="phone" value="" /></li>
+						<li><span asp-validation-for="Phone" class="text-danger"></span></li>
+					</ul>
+
+					<div class="alert alert-danger" id="err" style="display:none">
+						Password and Re_EnterPassword not match !!!
+					</div>
+					<div class="alert alert-danger" id="trung" style="display:none">
+						Email already exists, please try again !!
+					</div>
+					<div class="element">
+						<input class="ele-input" type="submit" value="Register Now">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

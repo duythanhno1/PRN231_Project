@@ -8042,19 +8042,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\voduy\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\ShopProjectAPI\\ShopProjectAPI.csproj",
+      "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\ShopProjectAPI\\ShopProjectAPI.csproj",
       "projectName": "ShopProjectAPI",
-      "projectPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\ShopProjectAPI\\ShopProjectAPI.csproj",
-      "packagesPath": "C:\\Users\\voduy\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN231\\PRN231\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\ShopProjectAPI\\obj\\",
+      "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\ShopProjectAPI\\ShopProjectAPI.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\ShopProjectAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\voduy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8074,6 +8074,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8140,7 +8145,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

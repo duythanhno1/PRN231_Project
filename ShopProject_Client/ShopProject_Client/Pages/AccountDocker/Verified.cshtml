@@ -1,0 +1,104 @@
+﻿@page
+@model ShopProject_Client.Pages.AccountDocker.VerifiedModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        img.logo-email {
+            width: 120px;
+            height: 60px;
+            margin-left: 10rem;
+        }
+
+        img.veri-email {
+            width: 100px;
+            height: 100px;
+            margin-left: 10.8rem;
+        }
+
+        .container {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 28rem;
+            border-radius: 1rem;
+            height: 30rem;
+            text-align: center;
+        }
+
+        a.btn.btn-success {
+            background: #004aad;
+            color: white;
+            text-decoration: none;
+            width: 11rem;
+            height: 2rem;
+            text-align: center;
+            padding-top: 0.6rem;
+            border-radius: 1rem;
+            margin-left: 8.5rem;
+        }
+
+        body {
+            padding-top: 130px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: aliceblue;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 28rem;
+            border-radius: 1rem;
+            height: 21rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo-email" src="~/images/logo1.png" style="width: 100px; height: 100px;" />
+        <img class="veri-email" src="~/images/email.png" />
+        <h1>Email Verification</h1>
+        <p>Congratulations! Your account has been successfully verified. Now, you can access our system.</p>
+        <a asp-page="/AccountDocker/Login" class="btn btn-success">Continue to Login</a>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        // Trích xuất id từ đoạn cuối của URL
+        var url = window.location.href;
+        var id = url.substr(url.lastIndexOf('?') + 1);
+
+        // Gọi yêu cầu AJAX với id truyền vào
+        $.ajax({
+            url: 'https://localhost:44312/Account/Verified?id=' + id,
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                console.log('Success API: ' + data);
+            },
+            error: function (error) {
+                if (jqXHR.status === 0) {
+                    window.location.href = "/Error/Error500";
+                } else {
+                    // Handle other types of errors
+                    console.error("Other error occurred: " + jqXHR.status);
+                }
+            }
+        });
+    });
+</script>
