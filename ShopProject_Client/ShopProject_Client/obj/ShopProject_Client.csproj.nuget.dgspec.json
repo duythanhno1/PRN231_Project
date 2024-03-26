@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj": {}
+    "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj": {}
   },
   "projects": {
-    "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj": {
+    "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+        "projectUniqueName": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
         "projectName": "ShopProject_Client",
-        "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\obj\\",
+        "projectPath": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\ShopProject_Client.csproj",
+        "packagesPath": "C:\\Users\\Asus_FX504\\.nuget\\packages\\",
+        "outputPath": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus_FX504\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -156,3 +156,24 @@ D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\Sh
 D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.pdb
 D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.genruntimeconfig.cache
 D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\ref\Responsitory.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\Responsitory.deps.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\Responsitory.runtimeconfig.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\Responsitory.runtimeconfig.dev.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\Responsitory.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\Responsitory.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\BussinessObject.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\DataAccess.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\DataAccess.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\bin\Debug\net5.0\BussinessObject.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.csproj.AssemblyReference.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.AssemblyInfoInputs.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.AssemblyInfo.cs
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.csproj.CoreCompileInputs.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.sourcelink.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsi.C4AAA213.Up2Date
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\refint\Responsitory.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\Responsitory.genruntimeconfig.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\Responsitory\obj\Debug\net5.0\ref\Responsitory.dll

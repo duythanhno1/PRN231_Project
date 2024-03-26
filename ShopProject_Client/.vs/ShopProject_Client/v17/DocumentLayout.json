@@ -1,9 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\",
+  "WorkspaceRootPath": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\ky 8\\prn231\\project\\project\\project\\prn231_project\\shopproject_client\\shopproject_client\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\wwwroot\\assets\\images\\h_lux10-removebg-preview.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\wwwroot\\assets\\images\\h_lux10-removebg-preview.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\pages\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\pages\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|d:\\prn231_project\\prn231_project\\shopproject_client\\shopproject_client\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{810BEF79-FC52-428B-9008-E330792A3B70}|ShopProject_Client\\ShopProject_Client.csproj|solutionrelative:shopproject_client\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -14,52 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 118,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "H_lux10-removebg-preview.png - PNG [200x200, 32 bit, PNG]",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\wwwroot\\assets\\images\\H_lux10-removebg-preview.png",
+              "RelativeDocumentMoniker": "ShopProject_Client\\wwwroot\\assets\\images\\H_lux10-removebg-preview.png",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\wwwroot\\assets\\images\\H_lux10-removebg-preview.png - PNG [200x200, 32 bit, PNG]",
+              "RelativeToolTip": "ShopProject_Client\\wwwroot\\assets\\images\\H_lux10-removebg-preview.png - PNG [200x200, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-03-20T08:45:13.629Z",
+              "EditorCaption": " - PNG [200x200, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Pages\\Home\\Home.cshtml",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Pages\\Home\\Home.cshtml",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Pages\\Home\\Home.cshtml",
+              "RelativeToolTip": "ShopProject_Client\\Pages\\Home\\Home.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAACkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T07:59:57.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Startup.cs",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Startup.cs",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Startup.cs",
+              "RelativeToolTip": "ShopProject_Client\\Startup.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAA1wCEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T19:49:06.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Program.cs",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Program.cs",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Program.cs",
+              "RelativeToolTip": "ShopProject_Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T19:49:06.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Pages\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "ShopProject_Client\\Pages\\Admin\\Dashboard.cshtml",
+              "ViewState": "AQIAAKEBAAAAAAAAAAAAAMoAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-19T18:30:47.964Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Ocelot.json",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Ocelot.json",
+              "RelativeDocumentMoniker": "ShopProject_Client\\Ocelot.json",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\Ocelot.json",
+              "RelativeToolTip": "ShopProject_Client\\Ocelot.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T17:40:07.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\appsettings.json",
+              "DocumentMoniker": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\appsettings.json",
               "RelativeDocumentMoniker": "ShopProject_Client\\appsettings.json",
-              "ToolTip": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\appsettings.json",
+              "ToolTip": "D:\\PRN231_Project\\PRN231_Project\\ShopProject_Client\\ShopProject_Client\\appsettings.json",
               "RelativeToolTip": "ShopProject_Client\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-12T16:24:07.358Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 118,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 118,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "WhenOpened": "2024-03-12T16:24:07.358Z"
             }
           ]
         }

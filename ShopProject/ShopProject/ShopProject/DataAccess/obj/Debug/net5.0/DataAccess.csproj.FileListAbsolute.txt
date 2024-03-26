@@ -143,3 +143,22 @@ D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\Sh
 D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
 D:\Ky 8\PRN231\project\Project\Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\bin\Debug\net5.0\BussinessObject.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.sourcelink.json
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.csproj.Up2Date
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+D:\PRN231_Project\PRN231_Project\ShopProject\ShopProject\ShopProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll

@@ -6763,19 +6763,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus_FX504\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
+      "projectUniqueName": "D:\\PRN231_Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
       "projectName": "Responsitory",
-      "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\obj\\",
+      "projectPath": "D:\\PRN231_Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\Responsitory.csproj",
+      "packagesPath": "C:\\Users\\Asus_FX504\\.nuget\\packages\\",
+      "outputPath": "D:\\PRN231_Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\Responsitory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus_FX504\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6789,8 +6789,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\Ky 8\\PRN231\\project\\Project\\Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj"
+            "D:\\PRN231_Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\PRN231_Project\\PRN231_Project\\ShopProject\\ShopProject\\ShopProject\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -6863,7 +6863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

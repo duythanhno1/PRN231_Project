@@ -16,7 +16,7 @@ Content-Transfer-Encoding: 8bit
 <body>
     <div style="text-align: center;">
         <h1>Xác nhận đăng kí tài khoản</h1>
-        <p>Cảm ơn bạn đã đăng kí tài khoản tại Phone Love Mobile Shop. Hãy xác nhận đăng kí bằng cách nhấn vào nút bên dưới:</p>
+        <p>Cảm ơn bạn đã đăng kí tài khoản tại G5Shop Mobile Shop. Hãy xác nhận đăng kí bằng cách nhấn vào nút bên dưới:</p>
         <a href="https://localhost:44312/AccountDocker/Verified?"1 style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">Xác nhận đăng kí</a>
     </div>
 </body>
